@@ -1,14 +1,10 @@
 pandas
-
 setuptools
 wheel
 numpy
 scikit-learn==1.1.3
-
 joblib
 fastapi
 uvicorn
 pydantic
-matplotlib
-# Optional (for LSTM path). Comment out if you don't need it locally:
-#tensorflow
+python-dateutil

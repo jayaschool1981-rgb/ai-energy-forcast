@@ -1,4 +1,7 @@
 pandas
+
+setuptools
+wheel
 numpy
 scikit-learn==1.1.3
 

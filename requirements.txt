@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+joblib
+fastapi
+uvicorn
+pydantic
+matplotlib
+# Optional (for LSTM path). Comment out if you don't need it locally:
+tensorflow

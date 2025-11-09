@@ -9,11 +9,16 @@ app = FastAPI(title="AI Energy Forecasting API", version="1.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173","http://127.0.0.1:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://ai-energy-forecast-frontend-eqsa7wsxx.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "energy_mlp.pkl")
 model = joblib.load(MODEL_PATH)
